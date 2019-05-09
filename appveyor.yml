@@ -19,8 +19,8 @@ build_script:
   - go test -v ./...
 
 after_build:
-  - 7z a rqlite-latest-win64.zip %GOPATH%\bin\rq*.exe
+  - 7z a rqlite-stable-win64.zip %GOPATH%\bin\rq*.exe
 
 artifacts:
-  - path: rqlite-latest-win64.zip
+  - path: rqlite-stable-win64.zip
     name: rqlite for Windows x64
